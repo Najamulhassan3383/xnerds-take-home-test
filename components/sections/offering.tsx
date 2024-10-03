@@ -2,7 +2,23 @@ import React from "react";
 import Image from "next/image";
 
 // Card Component
-const Card = ({ title, description, buttonText, rating, reviews, bg }) => {
+interface CardProps {
+  title: string;
+  description: string;
+  buttonText: string;
+  rating: number;
+  reviews: number;
+  bg: string;
+}
+
+const Card: React.FC<CardProps> = ({
+  title,
+  description,
+  buttonText,
+  rating,
+  reviews,
+  bg,
+}) => {
   return (
     <div className="bg-gradient-to-b from-[#4a2800] to-[#1a0f00] p-6 rounded-lg shadow-lg text-center text-white w-full max-w-sm relative space-y-12 overflow-hidden">
       <div className="absolute -top-8 left-1/2 transform -translate-x-1/2">
