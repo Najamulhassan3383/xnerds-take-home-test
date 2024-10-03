@@ -5,27 +5,13 @@ import { Star } from "lucide-react";
 const HeroSection = () => {
   return (
     <section className="relative bg-black text-white p-10">
-      {/* Navbar */}
       <nav className="flex justify-between items-center mb-12 px-4">
-        {/* Logo Section */}
         <div className="flex-shrink-0 block md:hidden">
-          <Image
-            src="/logo.svg"
-            width={100} // Smaller size for small screens
-            height={100}
-            alt="logo"
-          />
+          <Image src="/logo.svg" width={100} height={100} alt="logo" />
         </div>
         <div className="flex-shrink-0 hidden md:block">
-          <Image
-            src="/logo.svg"
-            width={200} // Smaller size for small screens
-            height={200}
-            alt="logo"
-          />
+          <Image src="/logo.svg" width={200} height={200} alt="logo" />
         </div>
-
-        {/* Navigation Links (Hidden on small screens) */}
         <ul className="hidden md:flex space-x-8">
           <li className="hover:text-orange-500 cursor-pointer text-lg">
             About
@@ -37,15 +23,11 @@ const HeroSection = () => {
             Offers
           </li>
         </ul>
-
-        {/* Free Proposal Button */}
         <button className="bg-white text-black px-3 py-2 rounded-md hover:bg-gray-200 text-base flex items-center space-x-2 flex-shrink-0">
           <span>Free Proposal</span>
           <Image src="/move-up-right.svg" width={20} height={20} alt="arrow" />
         </button>
       </nav>
-
-      {/* Hero Content */}
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="max-w-lg">
           <h1 className="text-5xl font-bold mb-6 leading-tight">
@@ -61,8 +43,6 @@ const HeroSection = () => {
             ads in a complete end-to-end service that's generated more client
             millions than most agencies have client accounts.
           </p>
-
-          {/* Button, Profile Images, Ratings, and Text */}
           <div className="flex flex-col md:flex-row items-start md:items-center space-y-2 md:space-y-0 space-x-4">
             <button className="bg-orange-500 text-white px-5 py-2 rounded-md hover:bg-orange-600 text-lg flex items-center space-x-2 flex-shrink-0">
               <span>Free Proposal</span>
@@ -77,7 +57,6 @@ const HeroSection = () => {
 
             <div className="flex items-center space-x-2 gap-14">
               <div className="flex -space-x-3">
-                {/* Profile Images */}
                 {[1, 2, 3, 4, 5].map((i) => (
                   <Image
                     key={i}
@@ -91,7 +70,6 @@ const HeroSection = () => {
               </div>
 
               <div className="flex flex-col ml-0 md:ml-5">
-                {/* Ratings */}
                 <div className="flex items-center space-x-1">
                   {[1, 2, 3, 4, 5].map((i) => (
                     <Star key={i} size={20} color="orange" />
@@ -104,8 +82,6 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-
-        {/* Visual Section */}
         <div className="hidden md:block">
           <Image src="/hero.svg" width={600} height={600} alt="hero" />
         </div>
