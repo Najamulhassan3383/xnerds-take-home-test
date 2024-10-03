@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Gallery from "./gallary";
 
 const SocialFeed = () => {
   return (
@@ -16,14 +17,7 @@ const SocialFeed = () => {
       </div>
 
       {/* Social Feed Image */}
-      <div>
-        <Image
-          src={"/socials.svg"}
-          alt="Social Feed"
-          width={2000}
-          height={2000}
-        />
-      </div>
+      <Gallery />
     </div>
   );
 };
