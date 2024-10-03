@@ -6,9 +6,19 @@ const HeroSection = () => {
   return (
     <section className="relative bg-black text-white p-10">
       {/* Navbar */}
-      <nav className="flex justify-between items-center mb-12">
-        <Image src="/logo.svg" width={200} height={200} alt="logo" />
-        <ul className="hidden  md:flex space-x-8">
+      <nav className="flex justify-between items-center mb-12 px-4">
+        {/* Logo Section */}
+        <div className="flex-shrink-0">
+          <Image
+            src="/logo.svg"
+            width={100} // Smaller size for small screens
+            height={100}
+            alt="logo"
+          />
+        </div>
+
+        {/* Navigation Links (Hidden on small screens) */}
+        <ul className="hidden md:flex space-x-8">
           <li className="hover:text-orange-500 cursor-pointer text-lg">
             About
           </li>
@@ -19,7 +29,9 @@ const HeroSection = () => {
             Offers
           </li>
         </ul>
-        <button className="bg-white text-black px-6 py-2 rounded-md hover:bg-gray-200 text-lg flex items-center space-x-2">
+
+        {/* Free Proposal Button */}
+        <button className="bg-white text-black px-3 py-2 rounded-md hover:bg-gray-200 text-base flex items-center space-x-2 flex-shrink-0">
           <span>Free Proposal</span>
           <Image src="/move-up-right.svg" width={20} height={20} alt="arrow" />
         </button>
