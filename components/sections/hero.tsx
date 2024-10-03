@@ -8,11 +8,19 @@ const HeroSection = () => {
       {/* Navbar */}
       <nav className="flex justify-between items-center mb-12 px-4">
         {/* Logo Section */}
-        <div className="flex-shrink-0">
+        <div className="flex-shrink-0 block md:hidden">
           <Image
             src="/logo.svg"
             width={100} // Smaller size for small screens
             height={100}
+            alt="logo"
+          />
+        </div>
+        <div className="flex-shrink-0 hidden md:block">
+          <Image
+            src="/logo.svg"
+            width={200} // Smaller size for small screens
+            height={200}
             alt="logo"
           />
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import SeoCard from "../seoCard";
 
 const SeoOptimisationSection = () => {
   return (
@@ -26,13 +27,34 @@ const SeoOptimisationSection = () => {
           height={2000}
         />
       </div>
-      <div className="flex md:hidden justify-center items-center space-y-8 space-x-6 md:space-y-0">
+      <div className="flex flex-col md:hidden justify-center items-center space-y-8  md:space-y-0">
         <Image
           src="/content-creation-mobile.svg"
           alt="SEO Optimisation"
-          width={2000}
-          height={2000}
+          width={1500}
+          height={1400}
         />
+        <div className="">
+          <SeoCard
+            imageSrc="/ads-logo.svg"
+            heading="Paid Ads"
+            description="Lower the customer acquisition cost with conversion-driven ads campaign."
+          />
+        </div>
+        <div className="">
+          <SeoCard
+            imageSrc="/Seo-optimization-logo.svg"
+            heading="SEO Optimization"
+            description="Organically grow our traffic, reach, and revenue."
+          />
+        </div>
+        <div className="">
+          <SeoCard
+            imageSrc="/PR-logo.svg"
+            heading="Digital PR"
+            description="Get more eyeballs and Be the Only brand in your space."
+          />
+        </div>
       </div>
     </section>
   );

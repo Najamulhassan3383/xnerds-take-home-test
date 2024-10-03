@@ -38,7 +38,7 @@ const MarketingStrategySection = () => {
 
         {/* Right Side: Text Content */}
         <div className="w-full md:w-1/2">
-          <h1 className="text-4xl hidden md:text-5xl font-bold mb-6 leading-tight text-center md:text-left">
+          <h1 className="text-4xl block md:text-5xl font-bold mb-6 leading-tight text-center md:text-left">
             Go To Content{" "}
             <span className="text-orange-500">Marketing strategy</span>
           </h1>
