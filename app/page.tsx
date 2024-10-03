@@ -7,7 +7,6 @@ import Offerings from "@/components/sections/offering";
 import ContactForm from "@/components/sections/contact";
 import FAQSection from "@/components/sections/faqs";
 import Footer from "@/components/sections/footer";
-import Gallery from "@/components/sections/gallary";
 
 export default function Home() {
   return (

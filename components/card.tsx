@@ -32,8 +32,10 @@ export const Card: React.FC<CardProps> = ({
             className="rounded-full"
           />
           <div className="ml-3">
-            <p className="font-semibold">{name}</p>
-            <p className="text-gray-300 text-sm">{userName}</p>
+            <p className="font-semibold">
+              {name} <span>|</span> <span>{profession}</span>
+            </p>
+            <p className="text-gray-300 text-sm text-start">{userName}</p>
           </div>
         </div>
         <p className="mt-3 text-sm text-start">{description}</p>
@@ -50,7 +52,7 @@ export const Card: React.FC<CardProps> = ({
             </div>
           </div>
         )}
-        <p className="mt-3 text-gray-400 text-sm">{timeAndDate}</p>
+        <p className="mt-3 text-gray-400 text-sm text-start">{timeAndDate}</p>
       </div>
     </div>
   );
